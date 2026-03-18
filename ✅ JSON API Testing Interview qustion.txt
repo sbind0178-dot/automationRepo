@@ -1,0 +1,321 @@
+✅ JSON & HTTP Methods – API Testing Interview Questions and Answers
+🔶 A. JSON – Interview Questions
+1. What is JSON?
+
+JSON (JavaScript Object Notation) is a lightweight format used to send and receive data in APIs.
+
+2. Why is JSON used in API Testing?
+
+Easy to read and write
+
+Lightweight
+
+Faster parsing
+
+Works with all programming languages
+
+Used by almost all REST APIs
+
+3. What are the data types supported by JSON?
+
+String
+
+Number
+
+Boolean
+
+Object
+
+Array
+
+Null
+
+4. What is a JSON Object?
+
+Data written in key-value pairs.
+Example:
+
+{"name": "John"}
+
+5. What is a JSON Array?
+
+Collection of values in square brackets.
+Example:
+
+["red", "blue", "green"]
+
+6. How do you validate JSON in API testing?
+
+Validate keys
+
+Validate values
+
+Validate data types
+
+JSON Schema validation
+
+Check nested objects and arrays
+
+7. What is JSON Schema?
+
+A structure that defines what a valid JSON should look like (fields, types, etc.)
+
+8. Difference between JSON and XML?
+JSON	XML
+Lightweight	Heavier
+Faster	Slower
+Uses objects	Uses tags
+Easy to read	Verbose
+🔶 B. HTTP Methods – Interview Questions
+1. What are HTTP methods?
+
+Operations used to interact with REST APIs.
+
+2. What is GET method?
+
+Used to retrieve data from the server.
+Example: Fetch all users.
+
+3. What is POST method?
+
+Used to create new data on the server.
+Example: Create a new user.
+
+4. What is PUT method?
+
+Used to fully update an existing resource.
+
+5. What is PATCH method?
+
+Used to partially update an existing resource.
+
+6. What is DELETE method?
+
+Used to remove data from the server.
+
+7. Difference between PUT and PATCH?
+PUT	PATCH
+Full update	Partial update
+Replaces entire record	Updates specific fields
+8. What is HEAD method?
+
+Same as GET but returns only headers, not body.
+
+9. What is OPTIONS method?
+
+Returns supported HTTP methods for the API.
+
+🔶 C. Combined JSON + API Questions
+1. How do you send JSON in a POST request?
+
+By adding JSON in the request body with header:
+
+Content-Type: application/json
+
+2. How do you validate a JSON response?
+
+Check status code
+
+Verify JSON structure
+
+Check values
+
+Check response time
+
+JSON schema validation
+
+3. What tools support JSON-based testing?
+
+Postman
+
+RestAssured
+
+Swagger
+
+JMeter
+
+Newman
+
+Karate
+
+🔥 Want a full API Testing Interview PDF or Hands-on examples in Postman?
+
+Just tell me — I can create it!
+
+
+⭐ API TESTING – JSON & HTTP METHODS INTERVIEW NOTES
+📘 1. JSON Basics
+Q1. What is JSON?
+
+JSON (JavaScript Object Notation) एक lightweight data format है जिसे APIs data भेजने और प्राप्त करने के लिए उपयोग करते हैं।
+
+Q2. Why JSON is used in API Testing?
+
+Lightweight
+
+Human readable
+
+Fast parsing
+
+Language independent
+
+REST APIs का default format
+
+Q3. JSON Data Types
+
+String
+
+Number
+
+Boolean
+
+Object
+
+Array
+
+Null
+
+Q4. JSON Object Example
+{
+  "name": "Amit",
+  "age": 25
+}
+
+Q5. JSON Array Example
+[
+  "red",
+  "blue",
+  "green"
+]
+
+Q6. JSON Schema क्या है?
+
+JSON structure को validate करने के rules का set.
+
+Q7. JSON vs XML
+JSON	XML
+Lightweight	Heavy
+Fast	Slow
+Objects	Tags
+Easy	Complex
+📘 2. HTTP Methods in API Testing
+Q1. What are HTTP Methods?
+
+Operations used to interact with server using APIs.
+
+Q2. GET Method
+
+Data retrieve करने के लिए
+
+Body नहीं होता
+
+Q3. POST Method
+
+नया data create करने के लिए
+
+Body में JSON भेजते हैं
+
+Q4. PUT Method
+
+रिकॉर्ड को पूरी तरह से update करता है
+
+Q5. PATCH Method
+
+आंशिक (partial) update करता है
+
+Q6. DELETE Method
+
+डेटा delete करता है
+
+Q7. PUT vs PATCH
+PUT	PATCH
+Full update	Partial update
+पूरे object replace	कुछ fields बदलता है
+Q8. HEAD Method
+
+Only headers return करता है, body नहीं।
+
+Q9. OPTIONS Method
+
+API कौन-कौन से HTTP methods support करती है, बताता है।
+
+📘 3. JSON + API Testing Practical Questions
+Q1. JSON body कैसे भेजते हैं?
+
+Headers में:
+
+Content-Type: application/json
+
+
+Body:
+
+{
+  "username": "test",
+  "password": "12345"
+}
+
+Q2. JSON Response कैसे validate करते हैं?
+
+Status code
+
+JSON keys
+
+JSON values
+
+Data types
+
+Schema validation
+
+Response time
+
+Q3. Tools for JSON API Testing
+
+Postman
+
+Swagger
+
+RestAssured
+
+JMeter
+
+Newman
+
+Karate
+
+📘 4. Important Interview Scenarios
+
+Scenario 1: Validate response code
+
+200 OK
+
+201 Created
+
+400 Bad Request
+
+404 Not Found
+
+500 Internal Server Error
+
+Scenario 2: Validate JSON fields
+
+Check required fields exist.
+
+Scenario 3: POST → GET → Validate
+
+Data create करो → GET से verify करो।
+
+Scenario 4: Authenticated APIs
+
+Bearer token / API key का use।
+
+📘 5. Short Notes for Quick Revision
+
+JSON = Key-value data format
+
+Most APIs use JSON only
+
+GET = Read
+
+POST = Create
+
+PUT = Full update
